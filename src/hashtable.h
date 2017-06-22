@@ -3,13 +3,8 @@
 
 #include <string>
 #include <iostream>
-#if defined __APPLE__ && defined __has_include && __has_include(<tr1/unordered_map>)
-#include <tr1/unordered_map>
-#define unordered_map std::tr1::unordered_map
-#else
 #include <unordered_map>
 #define unordered_map std::unordered_map
-#endif
 #include <node.h>
 #include <nan.h>
 #include "v8_value_hasher.h"
